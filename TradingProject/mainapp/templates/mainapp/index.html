@@ -1,0 +1,42 @@
+<!-- extends master file -->
+{% extends 'mainapp/master.html' %} 
+{% block titile %}
+  Index
+{% endblock %}
+
+<!-- create table to show database -->
+{% block body %}
+<table class="table" border="solid">
+    <thead>
+      <tr>
+        <!-- <th scope="col">id</th> -->
+        <th scope="col">BANKNIFTY</th>
+        <th scope="col">DATE</th>
+        <th scope="col">TIME</th>
+        <th scope="col">OPEN</th>
+        <th scope="col">HIGH</th>
+        <th scope="col">LOW</th>
+        <th scope="col">CLOSE</th>
+        <th scope="col">VOLUME</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+        {% for n in nifty %}
+
+        <tr>
+            <!-- <td scope="row">1</td>   -->
+            <td>{{n.BANKNIFTY}}</td>
+            <td>{{n.DATE}}</td>
+            <td>{{n.TIME}}</td>
+            <td>{{n.OPEN}}</td>
+            <td>{{n.HIGH}}</td>
+            <td>{{n.LOW}}</td>
+            <td>{{n.CLOSE}}</td>
+            <td>{{n.VOLUME}}</td>
+          </tr>
+          {% endfor %}
+    </tbody>   
+
+</table>
+{% endblock %}
