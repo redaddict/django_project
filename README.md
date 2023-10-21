@@ -1,6 +1,18 @@
 # django_project on add csv file and import and export
 In this project we work on csv file import  and export using django.
+csv file is nifty trading data, use csv file fetch data on html page and show niftys candles. 
+firstly import csv file on django admin and and html file create fields and show the data. for the csv import and export - 
+
+** install the - pip install django-import-export
+and import_export add in settings.py - installed app. 
+
+
+
+
+
 ** admin/ page you can see data in csv file , there you can import or export in json, xml and multiple choice.
+
+
 ** csv data can fetch html page .
 
 ** admin page login
